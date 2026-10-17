@@ -17,3 +17,8 @@ def test_subtract():
 def test_multiply():
     from calc import multiply
     assert multiply(4, 3) == 12
+
+
+def test_power():
+    from calc import power
+    assert power(2, 3) == 8
