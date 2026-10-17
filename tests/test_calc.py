@@ -17,3 +17,9 @@ def test_subtract():
 def test_multiply():
     from calc import multiply
     assert multiply(4, 3) == 12
+
+
+def test_divide_by_zero_message():
+    import pytest
+    with pytest.raises(ValueError, match="cannot divide by zero"):
+        divide(1, 0)
